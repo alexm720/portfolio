@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title> Alex's Portfolio Website </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+        <script src="https://kit.fontawesome.com/654cdf0bb4.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="crossorigin="anonymous"/>
+
+        <Link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans
+        *Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+
+            <button class = "nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="index.html#services" class="nav__link">Services</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="index.html#about" class="nav__link">About Me</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="index.html#projects" class="nav__link">Projects</a>
+                        </li>
+                    </ul>
+                </nav>
+        </header>
+
+
+
+
+        <div class="course-body-wrapper">
+            <div class="course-title">
+                <h1>Course Name's & Descriptions</h1>
+            </div>
+            <div class="cs-title-wrapper">
+                <button onclick = "show_courses()" class = "dropbtn">
+                    Relevant Computer Science Courses
+                </button>
+                <div id = "cs-dropdown" class="course-list-wrapper">
+                    <ul>
+                        <li>
+                            <div class="course-title-wrapper">       
+                                ECS 020: Discrete Mathematics For Computer Science  
+                            </div>
+                            <div class="course-paragraph-wrapper">
+                                Discrete mathematics of particular utility to computer science. 
+                                Proofs by induction. Propositional and first-order logic. 
+                                Sets, functions, and relations. Big-O and related notations.
+                                Recursion and solutions of recurrence relations. Combinatorics. 
+                                Probability on finite probability spaces. Graph theory. 
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="course-title-wrapper">       
+                                ECS 036A: Programming & Problem Solving
+                            </div>
+                            <div class="course-paragraph-wrapper">
+                                Computers and computer programming for students with some prior 
+                                experience, algorithm design, and debugging. 
+                                Good programming style. Use of basic UNIX tools.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="course-title-wrapper">       
+                                ECS 036B: Software Development & 
+                                Object-Oriented Programming in C++                       
+                            </div>
+                            <div class="course-paragraph-wrapper">
+                                Object-oriented programming in C++. Basic data structures and their use.
+                                Writing good programs of increased complexity and efficiency. 
+                                Methods for debugging and verification.
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="course-title-wrapper">       
+                                ECS 036C: Data Structures, Algorithms, & Programming
+                            </div>
+                            <div class="course-paragraph-wrapper">
+                                Design and analysis of data structures for a variety of applications;
+                                trees, heaps, searching, sorting, hashing, and graphs. Extensive programming.
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="course-title-wrapper">       
+                                ECS 050: Computer Organization & Machine-Dependent Programming 
+                            </div>
+                            <div class="course-paragraph-wrapper">
+                                Comparative study of different hardware architectures via programming 
+                                in the assembly languages of various machines. Role of system software 
+                                in producing an abstract machine. Introduction to I/O devices and programming.
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="course-title-wrapper">       
+                                ECS 120: Theory of Computation                      
+                            </div>
+                            <div class="course-paragraph-wrapper">
+                                Fundamental ideas in the theory of computation, 
+                                including formal languages, computability and complexity. 
+                                Reducibility among computational problems.
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="course-title-wrapper">       
+                                ECS 122A: Algorithm Design and Analysis                       
+                            </div>
+                            <div class="course-paragraph-wrapper">
+                                Complexity of algorithms, bounds on complexity, analysis methods. 
+                                Searching, sorting, pattern matching, graph algorithms. Algorithm 
+                                design techniques: divide-conquer, greedy, dynamic programming. 
+                                Approximation methods. NP-complete problems.
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="course-title-wrapper">       
+                                ECS 150: Operating Systems & System Programming
+                            </div>
+                            <div class="course-paragraph-wrapper">
+                                Basic concepts of operating systems and system programming. 
+                                Processes and interprocess communication/synchronization; 
+                                virtual memory, program loading and linking; file and I/O subsystems; 
+                                utility programs. Study of a real operating system. 
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="course-title-wrapper">       
+                                ECS 152A: Computer Networks                 
+                            </div>
+                            <div class="course-paragraph-wrapper">
+                                Overview of computer networks, TCP/IP protocol suite, 
+                                computer-networking applications and protocols, transport-layer
+                                protocols, network architectures, Internet Protocol (IP), routing, 
+                                link-layer protocols, local area and wireless networks, medium access
+                                control, physical aspects of data transmission, and 
+                                network-performance analysis
+                            </div>
+                        </li>
+                        <li>
+                            <div class="course-title-wrapper">       
+                                ECS 154A: Computer Architecture             
+                            </div>
+                            <div class="course-paragraph-wrapper">
+                                Introduction to digital design. Interfacing of devices for I/O, 
+                                memory and memory management. Input/output programming, via wait loops,
+                                hardware interrupts and calls to operating system services. Hardware 
+                                support for operating systems software.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="course-title-wrapper">       
+                                ECS 170: Introduction to Artificial Intelligence         
+                            </div>
+                            <div class="course-paragraph-wrapper">
+                                Design and implementation of intelligent computer systems.
+                                Knowledge representation and organization.Memory and 
+                                inference. Problem solving. Natural language processing. 
+                            </div>
+                        </li>
+                        <li>
+                            <div class="course-title-wrapper">       
+                                ECS 171: Machine Learning
+                            </div>
+                            <div class="course-paragraph-wrapper">
+                                Introduction to machine learning. Supervised & 
+                                unsupervised learning, including classification, 
+                                dimensionality reduction, regression & clustering 
+                                using modern machine learning methods. Applications 
+                                of machine learning to other fields.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="stat-title-wrapper">
+                <h3>Relevant Statistics Courses</h3>
+                <div class="stat-list-wrapper">
+                <ul>
+                    <li>
+                        <div class="course-title-wrapper">       
+                            STA 32: Gateway to Statistical Data Science                       
+                        </div>
+                        <div class="course-paragraph-wrapper">
+                            Probability concepts; programming in R; 
+                            exploratory data analysis; sampling distribution; 
+                            estimation and inference; linear regression; simulations; 
+                            resampling methods.
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="course-title-wrapper">       
+                            STA 104: Applied Statistical Methods - Nonparametric Statistics                       
+                        </div>
+                        <div class="course-paragraph-wrapper">
+                            Sign and Wilcoxon tests, Walsh averages. 
+                            Two-sample procedures. Inferences concerning scale. 
+                            Kruskal-Wallis test. Measures of association.
+                             Chi square and Kolmogorov-Smirnov tests. 
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-title-wrapper">       
+                            STA 106: Applied Statistical Methods - Analysis of Variance
+                        </div>
+                        <div class="course-paragraph-wrapper">
+                            Basics of experimental design. One-way and two-way 
+                            fixed effects analysis of variance models. Randomized 
+                            complete and incomplete block design. Multiple 
+                            comparisons procedures. One-way random effects model.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-title-wrapper">       
+                            STA 108: Applied Statistical Methods - Regression Analysis                      
+                        </div>
+                        <div class="course-paragraph-wrapper">
+                            Simple linear regression, variable selection techniques,
+                            stepwise regression, analysis of covariance,
+                            influence measures, computing packages.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-title-wrapper">       
+                            STA 131A: Introduction to Probability Theory
+                        </div>
+                        <div class="course-paragraph-wrapper">
+                            Fundamental concepts of probability theory, 
+                            discrete and continuous random variables, 
+                            standard distributions, moments and moment-generating
+                            functions, laws of large numbers and the central
+                            limit theorem.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-title-wrapper">       
+                            STA 131B: Introduction to Mathematical Statistics        
+                        </div>
+                        <div class="course-paragraph-wrapper">
+                            Sampling, methods of estimation, bias-variance
+                            decomposition, sampling distributions, Fisher information,
+                            confidence intervals, and some elements of
+                            hypothesis testing.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-title-wrapper">       
+                            STA 137: Applied Time Series Analysis
+                        </div>
+                        <div class="course-paragraph-wrapper">
+                            Time series relationships; univariate time series models: 
+                            trend, seasonality, correlated errors; regression with 
+                            correlated errors; autoregressive models; autoregressive 
+                            moving average models; spectral analysis: cyclical 
+                            behavior and periodicity, measures of periodicity, 
+                            periodogram; linear filtering; prediction of time series; 
+                            transfer function models.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-title-wrapper">       
+                            STA 138: Analysis of Categorical Data
+                        </div>
+                        <div class="course-paragraph-wrapper">
+                            Varieties of categorical data, cross-classifications, 
+                            contingency tables, tests for independence. Multidimensional 
+                            tables and log-linear models, maximum likelihood estimation;
+                            tests of goodness-of-fit. Logit models, linear logistic models. 
+                            Analysis of incomplete tables. Packaged computer programs, 
+                            analysis of real data.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-title-wrapper">       
+                            STA 141A: Fundamentals of Statistical Data Science    
+                        </div>
+                        <div class="course-paragraph-wrapper">
+                            Introduction to computing for data analysis and 
+                            visualization, and simulation, using a high-level
+                            language (e.g., R). Computational reasoning, 
+                            computationally intensive statistical methods,
+                            reading tabular and non-standard data
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-title-wrapper">       
+                            STA 141C: Big Data & High Performance Statistical Computing     
+                        </div>
+                        <div class="course-paragraph-wrapper">
+                            High-performance computing in high-level data analysis 
+                            languages; different computational approaches and
+                             paradigms for efficient analysis of big data; 
+                             interfaces to compiled languages; R and Python 
+                             programming languages; high-level parallel computing; 
+                             MapReduce; parallel algorithms and reasoning.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-title-wrapper">       
+                            CMN 152V: Social Science with Online Data                        </div>
+                        <div class="course-paragraph-wrapper">
+                            Survey of web-driven social science and its methods.
+                             Focus on web scraping and social media API’s. 
+                             Covers wrangling and analysis of data from social
+                              networks, online experiments, and other digital traces.
+                        </div>
+                    </li>
+                    
+                </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+        
+
+        <script src="index.js"></script>
+    </body>
+</html>

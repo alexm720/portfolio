@@ -299,9 +299,8 @@ header{
 
 .my-services{
     background-color: var(--clr-dark);
-    background-image: url(imgs/sea.jpg);
-    background-size: cover;
-    /*background-blend-mode:multiply ;*/
+    background-image: url(imgs/Ruler.jpg);
+    background-size:cover;
     color: var(--clr-light);
     text-align: center;
 }
@@ -479,3 +478,20 @@ header{
 .social-list__link{
     padding: .5em;
 }
+
+
+
+
+
+/*Course section */
+
+.course-title{
+    font-family: var(--ff-primary);
+    color: var(--clr-dark);
+    background: var(--clr-light);
+    background-size: cover;
+    padding: 4em 0 2em 0em;
+    text-align: center;
+}
+
+

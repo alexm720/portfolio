@@ -539,7 +539,8 @@ header{
 
 @media (max-width: 800px) {
     .cs-btn{
-        min-width: 400px;
+        min-width: 300px;
+        max-width: 300px;
         display: inline-block;
         padding: 0.5em 1em;
         background: var(--clr-dark);
@@ -552,6 +553,12 @@ header{
         transition: transform 200ms ease-in-out;
         
     }
+    
+.course-body-wrapper{
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    padding: 1em;
+}
 }
 
 

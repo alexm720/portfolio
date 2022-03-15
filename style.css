@@ -142,6 +142,16 @@ h3 {font-size: var(--fs-h3)}
     padding: .25em 1em;
 }
 
+
+.section__title--intro-p{
+    font-weight: var(--fw-reg);
+}
+
+.section__title--intro-p strong{
+    display: block;
+}
+
+
 /*header*/
 header{
     float: right;
@@ -295,6 +305,7 @@ header{
         left: -1.5em;
         width: calc(100% + 1.5em);
     }
+
 }
 
 /*services section*/
@@ -537,6 +548,9 @@ header{
     
 }
 
+.first{
+}
+
 @media (max-width: 800px) {
     .cs-btn{
         min-width: 300px;
@@ -559,6 +573,17 @@ header{
     color: var(--clr-dark);
     padding: 1em;
 }
+
+
+
+}
+.sub-exp-wrapper{
+    padding-left: .1em;
+    text-decoration: underline;
 }
 
-
+.work-title{
+    background-color: var(--clr-dark);
+    padding: 1em;
+    color: var(--clr-light)
+}

@@ -548,9 +548,6 @@ header{
     
 }
 
-.first{
-}
-
 @media (max-width: 800px) {
     .cs-btn{
         min-width: 300px;
@@ -568,10 +565,10 @@ header{
         
     }
     
-.course-body-wrapper{
-    background-color: var(--clr-light);
-    color: var(--clr-dark);
-    padding: 1em;
+    .course-body-wrapper{
+        background-color: var(--clr-light);
+        color: var(--clr-dark);
+        padding: 1em;
 }
 
 
@@ -587,3 +584,4 @@ header{
     padding: 1em;
     color: var(--clr-light)
 }
+
